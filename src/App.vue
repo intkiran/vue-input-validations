@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <InputUrl />
+    <InputNumber />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import InputUrl from "./components/InputUrl.vue";
+import InputNumberError from "./components/InputNumberError.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
-    InputUrl
+    InputNumberError
   }
 };
 </script>
