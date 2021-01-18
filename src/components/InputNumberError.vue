@@ -3,7 +3,7 @@
     <h3>Vuejs Input type number validation</h3>
     <br />
 
-    <input type="number" placeholder="Enter Number" v-model="mynumber"  @input="change($event)"
+    <input type="text" placeholder="Enter Number" v-model="mynumber"  @input="change($event)"
       @change="change($event)"/>
     <div class="error" v-if="!isValid">Number is Invalid</div
   </div>
@@ -15,14 +15,14 @@ export default {
   data() {
     return {
       mynumber: "",
-      isValid: false,
+      isValid: true,
       regex: /[0-9]/
     };
   },
   methods: {
     change:function(e){
       const number = e.target.value
-      this.isNumberValid(url);
+      this.isNumberValid(number);
     },
     isNumberValid: function(inputNumber) {
       this.isValid=   this.regex.test(inputNumber)

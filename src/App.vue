@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <InputNumber />
+    <InputNumberError />
   </div>
 </template>
 
